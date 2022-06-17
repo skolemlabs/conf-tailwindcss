@@ -1,0 +1,18 @@
+
+opam-version: "2.0"
+maintainer: "leon"
+authors: "leon"
+homepage: "skolem.com"
+bug-reports: "github.com/skolem"
+build: [
+  ["./is-tailwind-installed.sh"]
+]
+depexts: [
+  ["node"] {os-distribution = "homebrew"}
+  ["nodejs16"] {os-distribution = "macports"}
+]
+license: ["MIT"]
+synopsis: "Virtual package relying on tailwindcss"
+description:
+  "This package can only install if the tailwindcss npm package is available."
+flags: conf
